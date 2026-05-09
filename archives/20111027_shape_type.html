@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>SVGで作られた、崩れたフォントを直すゲーム「Shape Type」 :: dotHTML5</title>
+<link rel="canonical" href="https://dothtml5.com/archives/20111027_shape_type.html" />
+<link rel="shortcut icon" href="/images/favicon.png" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml" />
+<link rel="stylesheet" type="text/css" href="/main.css" />
+<!--[if lte IE 8]>
+<script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRQX4FF');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="/main.js"></script>
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="dotHTML5" />
+<meta property="og:url" content="https://dothtml5.com/archives/20111027_shape_type.html" />
+<meta property="og:image" content="https://dothtml5.com/images/logo2.png" />
+<meta property="og:title" content="SVGで作られた、崩れたフォントを直すゲーム「Shape Type」" />
+<meta property="og:description" content="Shape Type, the letter shaping game (Method of Action) SVG+JavaScriptで作られた、崩れたフォントのシェイプ（形）を調整して、どれだけ元に近いか得点を競うゲーム「Shape Type」が公開されています。 (英語) 幾つかあるピンクの丸をドラッグして、ドロー・アプリのベジェ・ツールの要領でフォントを調整できたら、「COMPARE」ボタンをクリックします。 「Original letter」と「Your letter」をクリックすると、正誤をSVGのアニメーションで確認でき、「NEXT」ボタンで次の問題に進みます。 フォントは10種類あり、全部終わると100点満点で得点（10問の平均？）が表示され、結果をTwitterにつぶやく事もできます。 同じようにフォントのカーニング（字間）を調整する「Kern Type」も公開されています。 関連リンク： 欧文書体の形をベジェ曲線で学べるゲーム「Shape Type, the letter shaping game」 (mifdesign_antenna) ベジェ曲線の操作感覚を試すことができる「SHAPE TYPE a letter shaping game」 (DesignWorks) 文字詰めの次はベジェ曲線をマスターできるゲームだと・・・？！ (IDEA*IDEA) / Kern Type： Kern Type, the kerning game デザインに必須の「文字詰め」をゲーム感覚で勉強できる「Kern Type」 (IDEA*IDEA) ... (続く)" />
+<meta property="fb:admins" content="804422091" />
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRQX4FF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="page">
+
+<header id="head">
+
+<aside class="search">
+<form action="//www.google.co.jp/cse" id="cse-search-box">
+<div>
+<input type="hidden" name="cx" value="008788122910082583695:5uy3gte7534" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="text" name="q" id="q" />
+</div>
+</form>
+<script type="text/javascript" src="//www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</aside>
+
+<div class="copy">
+<aside class="banner"></aside>
+<div class="logo"><a href="/">dotHTML5</a></div>
+<div class="sub">HTML5/CSS3の情報をクリップ！</div>
+</div>
+
+</header>
+
+<div id="main" class="pagetype_archive">
+
+<nav class="breadcrumb">
+<a href="/" rel="index up up">ホーム</a> &gt;
+<a href="/categories/svg.html" rel="up">SVG</a> &gt;
+</nav>
+
+
+<article class="entry">
+
+<header class="title">
+<h1>
+<a href="/archives/20111027_shape_type.html">SVGで作られた、崩れたフォントを直すゲーム「Shape Type」</a>
+</h1>
+</header>
+
+<hr />
+
+<div class="content">
+<p class="thum2">
+<a href="http://shape.method.ac/">Shape Type, the letter shaping game</a> (Method of Action)
+</p>
+
+<p>
+SVG+JavaScriptで作られた、崩れたフォントのシェイプ（形）を調整して、どれだけ元に近いか得点を競うゲーム「Shape Type」が公開されています。 (英語)
+</p>
+
+<p>
+幾つかあるピンクの丸をドラッグして、ドロー・アプリのベジェ・ツールの要領でフォントを調整できたら、「COMPARE」ボタンをクリックします。
+</p>
+
+<p>
+「Original letter」と「Your letter」をクリックすると、正誤をSVGのアニメーションで確認でき、「NEXT」ボタンで次の問題に進みます。
+</p>
+
+<p>
+フォントは10種類あり、全部終わると100点満点で得点（10問の平均？）が表示され、結果をTwitterにつぶやく事もできます。
+</p>
+
+<p>
+同じようにフォントのカーニング（字間）を調整する「Kern Type」も公開されています。
+</p>
+
+<div class="related">
+関連リンク：
+<div><a href="http://www.mif-design.com/blog/2011/10/26-145959.php">欧文書体の形をベジェ曲線で学べるゲーム「Shape Type, the letter shaping game」</a> (mifdesign_antenna)</div>
+<div><a href="http://designwork-s.com/article/232367190.html">ベジェ曲線の操作感覚を試すことができる「SHAPE TYPE a letter shaping game」</a> (DesignWorks)</div>
+<div><a href="http://www.ideaxidea.com/archives/2011/11/shape_type.html">文字詰めの次はベジェ曲線をマスターできるゲームだと・・・？！</a> (IDEA*IDEA)</div>
+</div>
+
+<div class="related">
+Kern Type：
+<div><a href="http://type.method.ac/">Kern Type, the kerning game</a></div>
+<div><a href="http://www.ideaxidea.com/archives/2011/10/kern_type.html">デザインに必須の「文字詰め」をゲーム感覚で勉強できる「Kern Type」</a> (IDEA*IDEA)</div>
+</div>
+</div>
+
+<p class="tax">（＊価格は掲載時のものです。購入時にご確認ください。）</p>
+
+<hr />
+
+<div class="keywords">
+Keywords : ベジェ曲線, 文字詰め
+</div>
+
+<hr />
+
+<footer class="link">
+2011/10/27 12:52
+<a href="/archives/20111027_shape_type.html">パーマリンク</a> |
+カテゴリ : <a href="/categories/svg.html">SVG</a>
+</footer>
+
+<hr />
+
+<nav class="nextprev">
+<div>次のクリップ：<a href="/archives/20111028_css3_sample_tips.html" rel="next">CSS3のTIPSなどのまとめ (2011/10/28)</a></div>
+<div>前のクリップ：<a href="/archives/20111027_prefix_free.html" rel="prev">CSS3のベンダープレフィックスを自動付加してくれるJSライブラリ「Prefix free」</a></div>
+</nav>
+
+<hr />
+
+<aside class="share" data-url="http://dothtml5.com/archives/20111027_shape_type.html" data-title="SVGで作られた、崩れたフォントを直すゲーム「Shape Type」">
+
+<nav class="twitter"></nav>
+<nav class="tumblr"></nav>
+<nav class="hatena"></nav>
+<nav class="facebook"></nav>
+
+</aside>
+
+<hr />
+
+</article>
+
+</div>
+
+<aside id="side">
+
+<nav class="subscribe">
+<span>購読 :</span>
+<a href="http://twitter.com/dotHTML5" class="twitter" target="tw" rel="me">Twitter</a>
+<a href="http://www.facebook.com/dotHTML5" class="facebook" target="fb" rel="me">Facebook</a>
+<a href="http://dothtml5.tumblr.com/" class="tumblr" target="tl" rel="me">Tumblr</a>
+<a href="http://b.hatena.ne.jp/dotHTML5/bookmark" class="hatena" target="ht" rel="me">Hatena</a>
+<a href="/atom.xml" class="feed" target="feed">Feed</a>
+</nav>
+
+<nav>
+<div class="section_name">新着エントリ</div>
+<div class="whatsnew"><a href="/whatsnew.html" class="include">新着エントリ</a></div>
+</nav>
+
+<nav>
+<div class="section_name">カテゴリ</div>
+<div class="category_list"><a href="/category_list.html" class="include">カテゴリ</a></div>
+</nav>
+
+<nav class="twitter_follow"></nav>
+<nav class="facebook_follow"></nav>
+
+</aside>
+
+<footer id="foot">
+<div class="copy">
+(C) 2010-2026 <a href="http://twitter.com/TFujinami" target="tw" rel="author">Tsuyoshi Fujinami</a> |
+<a href="http://www.sixapart.jp/movabletype/" target="6a">Powered by Movable Type</a>
+</div>
+</footer>
+
+</div>
+
+</body>
+
+</html>
+

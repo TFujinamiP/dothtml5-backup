@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS3で作られた回転拡大縮小しまくるプレゼンスライド「impress.js」 :: dotHTML5</title>
+<link rel="canonical" href="https://dothtml5.com/archives/20120105_impressjs.html" />
+<link rel="shortcut icon" href="/images/favicon.png" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml" />
+<link rel="stylesheet" type="text/css" href="/main.css" />
+<!--[if lte IE 8]>
+<script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRQX4FF');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="/main.js"></script>
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="dotHTML5" />
+<meta property="og:url" content="https://dothtml5.com/archives/20120105_impressjs.html" />
+<meta property="og:image" content="https://dothtml5.com/images/logo2.png" />
+<meta property="og:title" content="CSS3で作られた回転拡大縮小しまくるプレゼンスライド「impress.js」" />
+<meta property="og:description" content="impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers (Bartek Szopka) CSS3+JavaScriptで作られた、ページ切り替えのトランジションに回転・拡大・縮小のアニメーションを多用したプレゼン・スライド「impress.js」が公開されています。 (英語) スペースとカーソルキーでページを移動できます。 ライセンスはMITのようです。 関連リンク： bartaz/impress.js (GitHub) CSS3-Powered Presentation Framework: Impress.js (Web Resources Depot) 3Dで斬新なプレゼンが作れる「impress.js」の使い方をざっと説明してみるよ (IDEA*IDEA) 新年の挨拶…本気伝わる「CSS3スライド」でやってみない？ (TechWave) impress.jsライクなダイナミックなプレゼンテーションを作成するjQuery依存タイプのライブラリ・jmpress.js (かちびと.net) CSS3で3Dでビュンビュン飛ぶスライドが簡単に作れちゃうハックshi3mpress (wise9) 制作ツール、impress.js designやimpress.js layoutを公開中 (AIR Note!) チュートリアル記事 → Making an Impressive Product Showcase with CSS3 (英語) (Tutorialzine) HTML5アプリ作ろうぜ！ 第1回 impress.jsでド派手なスライドを作ろうぜ！ (＠IT) ★広大なカンバスを使って次々にコンテンツをスライドさせるスクリプト -jmpress.js (コリス) / あわせて読みたい： HTML5で作られたプレビュー編集機能のあるプレゼンスライド「Editable HTML5 Slides」 HTML5で作られたプレゼンスライド「deck.js」 HTML5で作られたプレゼンスライド「Shower」 HTML5で作られたプレゼンスライド「Landslide」 HTML5で作られたGoogle製のシンプルなプレゼンスライド HTML5で作られた3D風プレゼンスライド「jx」 CSS3で作られたプレゼンスライド「CSSS」 HTML5+CSS3で作られたプレゼンスライド「DZSlides」 CSS3で作られた3Dなエフェクトのプレゼンスライド CSS3だけでプレゼンスライド「Pure CSS Slide」 CSS3だけでプレゼンスライドを作る テキストからHTML5プレゼンを生成「KeyDown」 HTML5で作られたプレゼンツール「Nerine」 ... (続く)" />
+<meta property="fb:admins" content="804422091" />
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRQX4FF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="page">
+
+<header id="head">
+
+<aside class="search">
+<form action="//www.google.co.jp/cse" id="cse-search-box">
+<div>
+<input type="hidden" name="cx" value="008788122910082583695:5uy3gte7534" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="text" name="q" id="q" />
+</div>
+</form>
+<script type="text/javascript" src="//www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</aside>
+
+<div class="copy">
+<aside class="banner"></aside>
+<div class="logo"><a href="/">dotHTML5</a></div>
+<div class="sub">HTML5/CSS3の情報をクリップ！</div>
+</div>
+
+</header>
+
+<div id="main" class="pagetype_archive">
+
+<nav class="breadcrumb">
+<a href="/" rel="index up up">ホーム</a> &gt;
+<a href="/categories/css3.html" rel="up">CSS3</a> &gt;
+</nav>
+
+
+<article class="entry">
+
+<header class="title">
+<h1>
+<a href="/archives/20120105_impressjs.html">CSS3で作られた回転拡大縮小しまくるプレゼンスライド「impress.js」</a>
+</h1>
+</header>
+
+<hr />
+
+<div class="content">
+<p class="thum2">
+<a href="http://bartaz.github.com/impress.js/">impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers</a> (Bartek Szopka)
+</p>
+
+<p>
+CSS3+JavaScriptで作られた、ページ切り替えのトランジションに回転・拡大・縮小のアニメーションを多用したプレゼン・スライド「impress.js」が公開されています。 (英語)
+</p>
+
+<p>
+スペースとカーソルキーでページを移動できます。
+</p>
+
+<p>
+ライセンスはMITのようです。
+</p>
+
+<div class="related">
+関連リンク：
+<div><a href="https://github.com/bartaz/impress.js">bartaz/impress.js</a> (GitHub)</div>
+
+<div><a href="http://www.webresourcesdepot.com/css3-powered-presentation-framework-impress-js/">CSS3-Powered Presentation Framework: Impress.js</a> (Web Resources Depot)</div>
+
+<div><a href="http://www.ideaxidea.com/archives/2012/01/impress_js_undocumented.html">3Dで斬新なプレゼンが作れる「impress.js」の使い方をざっと説明してみるよ</a> (IDEA*IDEA)</div>
+<div><a href="http://techwave.jp/archives/51722382.html">新年の挨拶…本気伝わる「CSS3スライド」でやってみない？</a> (TechWave)</div>
+<div><a href="http://kachibito.net/web-design/jmpress-js.html">impress.jsライクなダイナミックなプレゼンテーションを作成するjQuery依存タイプのライブラリ・jmpress.js</a> (かちびと.net)</div>
+
+<div><a href="http://wise9.jp/archives/6388">CSS3で3Dでビュンビュン飛ぶスライドが簡単に作れちゃうハックshi3mpress</a> (wise9)</div>
+<div><a href="http://php5.xoop.jp/air_note/">制作ツール、impress.js designやimpress.js layoutを公開中</a> (AIR Note!)</div>
+
+<div><a href="http://tutorialzine.com/2012/02/css3-product-showcase/">チュートリアル記事 → Making an Impressive Product Showcase with CSS3 (英語)</a> (Tutorialzine)</div>
+
+<div><a href="http://www.atmarkit.co.jp/ait/articles/1203/14/news119.html" xhref="http://www.atmarkit.co.jp/fwcr/design/tool/html5app01/01.html">HTML5アプリ作ろうぜ！ 第1回 impress.jsでド派手なスライドを作ろうぜ！</a> (＠IT)</div>
+
+<div><a href="http://coliss.com/articles/build-websites/operation/javascript/jquery-plugin-jmpress-js.html">★広大なカンバスを使って次々にコンテンツをスライドさせるスクリプト -jmpress.js</a> (コリス)</div>
+</div>
+
+<div class="related">
+あわせて読みたい：
+<div><a href="/archives/20111019_editable_html5_slides.html">HTML5で作られたプレビュー編集機能のあるプレゼンスライド「Editable HTML5 Slides」</a></div>
+<div><a href="/archives/20111007_deckjs.html">HTML5で作られたプレゼンスライド「deck.js」</a></div>
+<div><a href="/archives/20110810_shower.html">HTML5で作られたプレゼンスライド「Shower」</a></div>
+<div><a href="/archives/20110801_landslide.html">HTML5で作られたプレゼンスライド「Landslide」</a></div>
+<div><a href="/archives/20110720_html5slides.html">HTML5で作られたGoogle製のシンプルなプレゼンスライド</a></div>
+<div><a href="/archives/20110713_jx.html">HTML5で作られた3D風プレゼンスライド「jx」</a></div>
+<div><a href="/archives/20110526_csss.html">CSS3で作られたプレゼンスライド「CSSS」</a></div>
+<div><a href="/archives/20110517_dzslides.html">HTML5+CSS3で作られたプレゼンスライド「DZSlides」</a></div>
+<div><a href="/archives/20110422_css_3d_slideshow.html">CSS3で作られた3Dなエフェクトのプレゼンスライド</a></div>
+<div><a href="/archives/20110408_purecssslide.html">CSS3だけでプレゼンスライド「Pure CSS Slide」</a></div>
+<div><a href="/archives/20110330_pure_css_slide.html">CSS3だけでプレゼンスライドを作る</a></div>
+<div><a href="/archives/20110315_keydown.html">テキストからHTML5プレゼンを生成「KeyDown」</a></div>
+<div><a href="/archives/20100823_nerine.html">HTML5で作られたプレゼンツール「Nerine」</a></div>
+</div>
+</div>
+
+<p class="tax">（＊価格は掲載時のものです。購入時にご確認ください。）</p>
+
+<hr />
+
+<footer class="link">
+2012/01/05 12:02
+<a href="/archives/20120105_impressjs.html">パーマリンク</a> |
+カテゴリ : <a href="/categories/css3.html">CSS3</a>
+</footer>
+
+<hr />
+
+<nav class="nextprev">
+<div>次のクリップ：<a href="/archives/20120105_picsselz.html" rel="next">画像やHTML5 canvasを一切使わずにCSS3だけでビットマップ風な表現「piCSSelz」</a></div>
+<div>前のクリップ：<a href="/archives/20120105_cheatsheets_wdl.html" rel="prev">HTML5のチートシート (Web Design Ledger)</a></div>
+</nav>
+
+<hr />
+
+<aside class="share" data-url="http://dothtml5.com/archives/20120105_impressjs.html" data-title="CSS3で作られた回転拡大縮小しまくるプレゼンスライド「impress.js」">
+
+<nav class="twitter"></nav>
+<nav class="tumblr"></nav>
+<nav class="hatena"></nav>
+<nav class="facebook"></nav>
+
+</aside>
+
+<hr />
+
+</article>
+
+</div>
+
+<aside id="side">
+
+<nav class="subscribe">
+<span>購読 :</span>
+<a href="http://twitter.com/dotHTML5" class="twitter" target="tw" rel="me">Twitter</a>
+<a href="http://www.facebook.com/dotHTML5" class="facebook" target="fb" rel="me">Facebook</a>
+<a href="http://dothtml5.tumblr.com/" class="tumblr" target="tl" rel="me">Tumblr</a>
+<a href="http://b.hatena.ne.jp/dotHTML5/bookmark" class="hatena" target="ht" rel="me">Hatena</a>
+<a href="/atom.xml" class="feed" target="feed">Feed</a>
+</nav>
+
+<nav>
+<div class="section_name">新着エントリ</div>
+<div class="whatsnew"><a href="/whatsnew.html" class="include">新着エントリ</a></div>
+</nav>
+
+<nav>
+<div class="section_name">カテゴリ</div>
+<div class="category_list"><a href="/category_list.html" class="include">カテゴリ</a></div>
+</nav>
+
+<nav class="twitter_follow"></nav>
+<nav class="facebook_follow"></nav>
+
+</aside>
+
+<footer id="foot">
+<div class="copy">
+(C) 2010-2026 <a href="http://twitter.com/TFujinami" target="tw" rel="author">Tsuyoshi Fujinami</a> |
+<a href="http://www.sixapart.jp/movabletype/" target="6a">Powered by Movable Type</a>
+</div>
+</footer>
+
+</div>
+
+</body>
+
+</html>
+

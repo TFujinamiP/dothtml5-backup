@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>ブラウザ上でCSS3のテストコードを簡単に試せる「dabblet」 :: dotHTML5</title>
+<link rel="canonical" href="https://dothtml5.com/archives/20120301_dabblet.html" />
+<link rel="shortcut icon" href="/images/favicon.png" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml" />
+<link rel="stylesheet" type="text/css" href="/main.css" />
+<!--[if lte IE 8]>
+<script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRQX4FF');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="/main.js"></script>
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="dotHTML5" />
+<meta property="og:url" content="https://dothtml5.com/archives/20120301_dabblet.html" />
+<meta property="og:image" content="https://dothtml5.com/images/logo2.png" />
+<meta property="og:title" content="ブラウザ上でCSS3のテストコードを簡単に試せる「dabblet」" />
+<meta property="og:description" content="dabblet (Lea Verou) ブラウザ上で、CSS3のテストコードを簡単に試せる「dabblet」が公開されています。 (英語) 画面上部の「CSS Result」タブにマウスの合わせるとメニューが表示されます。 （ブラウザのウィンドウ幅が広いと始めからメニューが表示されてる） HTMLのコードとCSSのコードと結果表示の画面を切り替えたり、同時に表示したりできます。 ベンダープレフィックスは書かなくても自動で生成してくれるようです。 関連リンク： ヘルプ (英語) (dabblet.com) Introducing dabblet: An interactive CSS playground (英語) (Lea Verou) cssとhtmlをその場で書くだけですぐに結果を確認出来る・dabblet (かちびと.net) Webデザイナー向け。CSSを手軽に楽しむ「dabblet」 (MOONGIFT) / 同じ作者さんの作品： ブラウザのCSS3対応度がわかる「The CSS3 Test」 CSS3アニメーションをdata属性で指定できるJSライブラリ「animatable」 CSS3のベンダープレフィックスを自動付加してくれるJSライブラリ「Prefix free」 CSS3アニメーションのタイミングをGUIで分かりやすく調整できるツール HTML5で作られたアニメーションするプログレスバー CSS3で作られたプレゼンスライド「CSSS」 CSS3で画像を使わずにチェック柄の背景 CSS3をわかり易くまとめた「CSS3 A practical introduction」 / あわせて読みたい： CSS3だけで作られたパーツやスニペットを投稿公開共有できる「CSSDeck」 モバイル向けHTML5フレームワークSencha Touchのオンラインエディタ「Sencha Fiddle」 HTMLのオンラインエディタ「jsfiddle」 HTML5などのソースを共有するコミュニティサイト「jsdo.it」 ... (続く)" />
+<meta property="fb:admins" content="804422091" />
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRQX4FF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="page">
+
+<header id="head">
+
+<aside class="search">
+<form action="//www.google.co.jp/cse" id="cse-search-box">
+<div>
+<input type="hidden" name="cx" value="008788122910082583695:5uy3gte7534" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="text" name="q" id="q" />
+</div>
+</form>
+<script type="text/javascript" src="//www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</aside>
+
+<div class="copy">
+<aside class="banner"></aside>
+<div class="logo"><a href="/">dotHTML5</a></div>
+<div class="sub">HTML5/CSS3の情報をクリップ！</div>
+</div>
+
+</header>
+
+<div id="main" class="pagetype_archive">
+
+<nav class="breadcrumb">
+<a href="/" rel="index up up">ホーム</a> &gt;
+<a href="/categories/css3.html" rel="up">CSS3</a> &gt;
+</nav>
+
+
+<article class="entry">
+
+<header class="title">
+<h1>
+<a href="/archives/20120301_dabblet.html">ブラウザ上でCSS3のテストコードを簡単に試せる「dabblet」</a>
+</h1>
+</header>
+
+<hr />
+
+<div class="content">
+<p class="thum2">
+<a href="http://dabblet.com/">dabblet</a> (Lea Verou)
+</p>
+
+<p>
+ブラウザ上で、CSS3のテストコードを簡単に試せる「dabblet」が公開されています。 (英語)
+</p>
+
+<p>
+画面上部の「CSS Result」タブにマウスの合わせるとメニューが表示されます。<br />
+（ブラウザのウィンドウ幅が広いと始めからメニューが表示されてる）
+</p>
+
+<p>
+HTMLのコードとCSSのコードと結果表示の画面を切り替えたり、同時に表示したりできます。
+</p>
+
+<p>
+ベンダープレフィックスは書かなくても自動で生成してくれるようです。
+</p>
+
+<div class="related">
+関連リンク：
+<div><a href="http://dabblet.com/help/">ヘルプ (英語)</a> (dabblet.com)</div>
+<div><a href="http://lea.verou.me/2011/12/introducing-dabblet-an-interactive-css-playground/">Introducing dabblet: An interactive CSS playground (英語)</a> (Lea Verou)</div>
+
+<div><a href="http://kachibito.net/web-design/dabblet.html">cssとhtmlをその場で書くだけですぐに結果を確認出来る・dabblet</a> (かちびと.net)</div>
+<div><a href="http://www.moongift.jp/2012/02/20120216-3/">Webデザイナー向け。CSSを手軽に楽しむ「dabblet」</a> (MOONGIFT)</div>
+</div>
+
+<div class="related">
+同じ作者さんの作品：
+<div><a href="/archives/20120206_the_css3_test.html">ブラウザのCSS3対応度がわかる「The CSS3 Test」</a></div>
+<div><a href="/archives/20111114_animatable.html">CSS3アニメーションをdata属性で指定できるJSライブラリ「animatable」</a></div>
+<div><a href="/archives/20111027_prefix_free.html">CSS3のベンダープレフィックスを自動付加してくれるJSライブラリ「Prefix free」</a></div>
+<div><a href="/archives/20110921_cubic_bezier.html">CSS3アニメーションのタイミングをGUIで分かりやすく調整できるツール</a></div>
+<div><a href="/archives/20110708_progress_polyfill.html">HTML5で作られたアニメーションするプログレスバー</a></div>
+<div><a href="/archives/20110526_csss.html">CSS3で作られたプレゼンスライド「CSSS」</a></div>
+<div><a href="/archives/20101227_css3_pattern.html">CSS3で画像を使わずにチェック柄の背景</a></div>
+<div><a href="/archives/20101101_css3_practical_introduction.html">CSS3をわかり易くまとめた「CSS3 A practical introduction」</a></div>
+</div>
+
+<div class="related">
+あわせて読みたい：
+<div><a href="/archives/20120123_cssdeck.html">CSS3だけで作られたパーツやスニペットを投稿公開共有できる「CSSDeck」</a></div>
+<div><a href="/archives/20111213_sencha_fiddle.html">モバイル向けHTML5フレームワークSencha Touchのオンラインエディタ「Sencha Fiddle」</a></div>
+<div><a href="/archives/20110121_jsfiddle.html">HTMLのオンラインエディタ「jsfiddle」</a></div>
+<div><a href="/archives/20100621_jsdoit.html">HTML5などのソースを共有するコミュニティサイト「jsdo.it」</a></div>
+</div>
+</div>
+
+<p class="tax">（＊価格は掲載時のものです。購入時にご確認ください。）</p>
+
+<hr />
+
+<footer class="link">
+2012/03/01 13:27
+<a href="/archives/20120301_dabblet.html">パーマリンク</a> |
+カテゴリ : <a href="/categories/css3.html">CSS3</a>
+</footer>
+
+<hr />
+
+<nav class="nextprev">
+<div>次のクリップ：<a href="/archives/20120302_sample_tips.html" rel="next">HTML5のTIPSなどのまとめ (2012/3/2)</a></div>
+<div>前のクリップ：<a href="/archives/20120301_adobe_createjs.html" rel="prev">アドビ公式、Flash ProfessionalからHTML5を書き出すツール「CreateJS」</a></div>
+</nav>
+
+<hr />
+
+<aside class="share" data-url="http://dothtml5.com/archives/20120301_dabblet.html" data-title="ブラウザ上でCSS3のテストコードを簡単に試せる「dabblet」">
+
+<nav class="twitter"></nav>
+<nav class="tumblr"></nav>
+<nav class="hatena"></nav>
+<nav class="facebook"></nav>
+
+</aside>
+
+<hr />
+
+</article>
+
+</div>
+
+<aside id="side">
+
+<nav class="subscribe">
+<span>購読 :</span>
+<a href="http://twitter.com/dotHTML5" class="twitter" target="tw" rel="me">Twitter</a>
+<a href="http://www.facebook.com/dotHTML5" class="facebook" target="fb" rel="me">Facebook</a>
+<a href="http://dothtml5.tumblr.com/" class="tumblr" target="tl" rel="me">Tumblr</a>
+<a href="http://b.hatena.ne.jp/dotHTML5/bookmark" class="hatena" target="ht" rel="me">Hatena</a>
+<a href="/atom.xml" class="feed" target="feed">Feed</a>
+</nav>
+
+<nav>
+<div class="section_name">新着エントリ</div>
+<div class="whatsnew"><a href="/whatsnew.html" class="include">新着エントリ</a></div>
+</nav>
+
+<nav>
+<div class="section_name">カテゴリ</div>
+<div class="category_list"><a href="/category_list.html" class="include">カテゴリ</a></div>
+</nav>
+
+<nav class="twitter_follow"></nav>
+<nav class="facebook_follow"></nav>
+
+</aside>
+
+<footer id="foot">
+<div class="copy">
+(C) 2010-2026 <a href="http://twitter.com/TFujinami" target="tw" rel="author">Tsuyoshi Fujinami</a> |
+<a href="http://www.sixapart.jp/movabletype/" target="6a">Powered by Movable Type</a>
+</div>
+</footer>
+
+</div>
+
+</body>
+
+</html>
+

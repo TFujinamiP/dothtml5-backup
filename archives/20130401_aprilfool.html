@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>モジラがJSだけでSWFをリアルタイムに再生できる「swf.js」プロジェクトを発表！ :: dotHTML5</title>
+<link rel="canonical" href="https://dothtml5.com/archives/20130401_aprilfool.html" />
+<link rel="shortcut icon" href="/images/favicon.png" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml" />
+<link rel="stylesheet" type="text/css" href="/main.css" />
+<!--[if lte IE 8]>
+<script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRQX4FF');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="/main.js"></script>
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="dotHTML5" />
+<meta property="og:url" content="https://dothtml5.com/archives/20130401_aprilfool.html" />
+<meta property="og:image" content="https://dothtml5.com/images/logo2.png" />
+<meta property="og:title" content="モジラがJSだけでSWFをリアルタイムに再生できる「swf.js」プロジェクトを発表！" />
+<meta property="og:description" content="モジラがJavaScriptだけでSWFをリアルタイムに再生できる「swf.js」プロジェクトを発表！ モジラがプラグイン無しでJavaScriptだけでSWFファイルをリアルタイムに再生できる「swf.js」プロジェクトを発表しました。 JavaScriptとHTML5 canvasやHTML5 videoで解析＆再生を行うのでiOS/Androidにも対応しています。 変換や出力ツール的なものは以前から存在していましたが、こちらはリアルタイムに行います。 Flash Liteではなくフル版のFlash (Flash Player 11.5/SWFバージョン18相当) に対応します。 アドビ純正のFlash Playerではバグや脆弱性の多さが問題になってしましたが、それが解決されると多くのFlasherが期待を寄せています。 先日発表されたJavaScriptをネイティブに近い速度まで高速化させるasm.jsとの組み合わせで、速度的な問題は無いようです。 正式リリース後はpdf.jsなどと同様にFirefoxに標準でビルトインされる予定です。 ＊これは2013年4月1日のエイプリルフールのネタです。 追記：エイプリルフールのつもりで書いたのですが、名称は異なりますが同等のプロジェクト「shumway」があったようです！（教えてくださった方、ありがとうございます！）下に日本語情報を集めておきました。 関連リンク： 次世代ブラウザ Firefox - 高速・安全・カスタマイズ自在な無料ブラウザ (Mozilla) Firefox 22が「asm.js」採用へ、JavaScriptがネイティブアプリに近い実行速度まで高速化 HTML5でPDFを描画するJSライブラリ「pdf.js」 / あわせて読みたい： ChromeとFirefoxがバージョン番号戦争に終止符！今後は日付表記に MSがIEのエンジンの独自開発を止めWebkitを採用！ / shumwayの情報： mozilla/shumway (GitHub) モジラ、互換Flashプレイヤーの「Shumway」をJavaScriptで開発中 (Publickey) Mozilla、JavaScriptでFlashのオープンな実行エンジンを実装するプロジェクト「Shumway」を発表 (SourceForge) ... (続く)" />
+<meta property="fb:admins" content="804422091" />
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRQX4FF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="page">
+
+<header id="head">
+
+<aside class="search">
+<form action="//www.google.co.jp/cse" id="cse-search-box">
+<div>
+<input type="hidden" name="cx" value="008788122910082583695:5uy3gte7534" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="text" name="q" id="q" />
+</div>
+</form>
+<script type="text/javascript" src="//www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</aside>
+
+<div class="copy">
+<aside class="banner"></aside>
+<div class="logo"><a href="/">dotHTML5</a></div>
+<div class="sub">HTML5/CSS3の情報をクリップ！</div>
+</div>
+
+</header>
+
+<div id="main" class="pagetype_archive">
+
+<nav class="breadcrumb">
+<a href="/" rel="index up up">ホーム</a> &gt;
+<a href="/categories/aprilfool.html" rel="up">エイプリルフール</a> &gt;
+</nav>
+
+
+<article class="entry">
+
+<header class="title">
+<h1>
+<a href="/archives/20130401_aprilfool.html">モジラがJSだけでSWFをリアルタイムに再生できる「swf.js」プロジェクトを発表！</a>
+</h1>
+</header>
+
+<hr />
+
+<div class="content">
+<p class="thum2">
+<a href="http://www.aprilfool.jp/">モジラがJavaScriptだけでSWFをリアルタイムに再生できる「swf.js」プロジェクトを発表！</a>
+</p>
+
+<p>
+モジラがプラグイン無しでJavaScriptだけでSWFファイルをリアルタイムに再生できる「swf.js」プロジェクトを発表しました。
+</p>
+
+<p>
+JavaScriptとHTML5 canvasやHTML5 videoで解析＆再生を行うのでiOS/Androidにも対応しています。
+</p>
+
+<p>
+変換や出力ツール的なものは以前から存在していましたが、こちらはリアルタイムに行います。</p>
+
+<p>
+Flash Liteではなくフル版のFlash (Flash Player 11.5/SWFバージョン18相当) に対応します。
+</p>
+
+<p>
+アドビ純正のFlash Playerではバグや脆弱性の多さが問題になってしましたが、それが解決されると多くのFlasherが期待を寄せています。
+</p>
+
+<p>
+先日発表されたJavaScriptをネイティブに近い速度まで高速化させるasm.jsとの組み合わせで、速度的な問題は無いようです。
+</p>
+
+<p>
+正式リリース後はpdf.jsなどと同様にFirefoxに標準でビルトインされる予定です。
+</p>
+
+<p style="color:red; font-weight:bold;">
+＊これは2013年4月1日のエイプリルフールのネタです。
+</p>
+
+<p style="color:red; font-weight:bold;">
+追記：エイプリルフールのつもりで書いたのですが、名称は異なりますが同等のプロジェクト「shumway」があったようです！（教えてくださった方、ありがとうございます！）下に日本語情報を集めておきました。
+</p>
+
+<div class="related">
+関連リンク：
+<div><a href="http://mozilla.jp/firefox/">次世代ブラウザ Firefox - 高速・安全・カスタマイズ自在な無料ブラウザ</a> (Mozilla)</div>
+
+<div><a href="/archives/20130326_clips.html#pickup1">Firefox 22が「asm.js」採用へ、JavaScriptがネイティブアプリに近い実行速度まで高速化</a></div>
+<div><a href="/archives/20110616_pdfjs.html">HTML5でPDFを描画するJSライブラリ「pdf.js」</a></div>
+</div>
+
+<div class="related">
+あわせて読みたい：
+<div><a href="/archives/20120401_aprilfool.html">ChromeとFirefoxがバージョン番号戦争に終止符！今後は日付表記に</div>
+<div><a href="/archives/20110401_aprilfool.html">MSがIEのエンジンの独自開発を止めWebkitを採用！</a></div>
+</div>
+
+<div class="related">
+shumwayの情報：
+<div><a href="https://github.com/mozilla/shumway">mozilla/shumway</a> (GitHub)</div>
+<div><a href="http://www.publickey1.jp/blog/12/flashshumwayjavascript.html">モジラ、互換Flashプレイヤーの「Shumway」をJavaScriptで開発中</a> (Publickey)</div>
+<div><a href="http://sourceforge.jp/magazine/12/11/14/0022234">Mozilla、JavaScriptでFlashのオープンな実行エンジンを実装するプロジェクト「Shumway」を発表</a> (SourceForge)</div>
+</div>
+</div>
+
+<p class="tax">（＊価格は掲載時のものです。購入時にご確認ください。）</p>
+
+<hr />
+
+<footer class="link">
+2013/04/01 07:54
+<a href="/archives/20130401_aprilfool.html">パーマリンク</a> |
+カテゴリ : <a href="/categories/aprilfool.html">エイプリルフール</a>
+</footer>
+
+<hr />
+
+<nav class="nextprev">
+<div>次のクリップ：<a href="/archives/20130402_clips.html" rel="next">HTML5/CSS3のニュースやTIPSなどのまとめ (2013年4月2日)</a></div>
+<div>前のクリップ：<a href="/archives/20130331_clips.html" rel="prev">HTML5/CSS3のニュースやTIPSなどのまとめ (2013年3月31日)</a></div>
+</nav>
+
+<hr />
+
+<aside class="share" data-url="http://dothtml5.com/archives/20130401_aprilfool.html" data-title="モジラがJSだけでSWFをリアルタイムに再生できる「swf.js」プロジェクトを発表！">
+
+<nav class="twitter"></nav>
+<nav class="tumblr"></nav>
+<nav class="hatena"></nav>
+<nav class="facebook"></nav>
+
+</aside>
+
+<hr />
+
+</article>
+
+</div>
+
+<aside id="side">
+
+<nav class="subscribe">
+<span>購読 :</span>
+<a href="http://twitter.com/dotHTML5" class="twitter" target="tw" rel="me">Twitter</a>
+<a href="http://www.facebook.com/dotHTML5" class="facebook" target="fb" rel="me">Facebook</a>
+<a href="http://dothtml5.tumblr.com/" class="tumblr" target="tl" rel="me">Tumblr</a>
+<a href="http://b.hatena.ne.jp/dotHTML5/bookmark" class="hatena" target="ht" rel="me">Hatena</a>
+<a href="/atom.xml" class="feed" target="feed">Feed</a>
+</nav>
+
+<nav>
+<div class="section_name">新着エントリ</div>
+<div class="whatsnew"><a href="/whatsnew.html" class="include">新着エントリ</a></div>
+</nav>
+
+<nav>
+<div class="section_name">カテゴリ</div>
+<div class="category_list"><a href="/category_list.html" class="include">カテゴリ</a></div>
+</nav>
+
+<nav class="twitter_follow"></nav>
+<nav class="facebook_follow"></nav>
+
+</aside>
+
+<footer id="foot">
+<div class="copy">
+(C) 2010-2026 <a href="http://twitter.com/TFujinami" target="tw" rel="author">Tsuyoshi Fujinami</a> |
+<a href="http://www.sixapart.jp/movabletype/" target="6a">Powered by Movable Type</a>
+</div>
+</footer>
+
+</div>
+
+</body>
+
+</html>
+
